@@ -11,18 +11,18 @@ html, body {
 
 h1{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 1.7rem;
     margin: 0 0 16px 0;
 }
 
 a{
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 p{
-    font-size: 24px;
+    font-size: 1rem;
     color: #979797;
     margin: 0 0 16px 0;
 }
@@ -46,27 +46,15 @@ header > h1{
 .btn {
     background-color: #CEEDC7;
     color: white;
-    padding: 8px 24px;
+    padding: 8px;
     cursor: pointer;
-}
-
-.btn-alt{
-    background-color: white;
-    color: #CEEDC7;
-    margin-right: 50px;
-    border: 2px solid #CEEDC7;
+    border-radius: 5px;
 }
 
 .btn:hover {
     background-color: white;
     border: 1px solid #CEEDC7;
     color: #CEEDC7;
-}
-
-.btn-alt:hover{
-    background-color: #CEEDC7;
-    color: white;
-    border: 2px solid white; 
 }
 
 #header{
@@ -256,7 +244,13 @@ nav >  a {
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
+    margin-top: 32px;
     margin-bottom: 32px;
+}
+
+#cover {
+    width: 100%;
+    border-radius: 12px;
 }
 
 #landing p {
@@ -498,7 +492,7 @@ footer p{
     }
 }
 
-@media only screen and (max-width: 1354px){
+/* @media only screen and (max-width: 1354px){
     html, body{
         margin: 0;
         padding: 0;
@@ -511,17 +505,6 @@ footer p{
     section{
         padding: 64px 32px;
     }
-
-    /* header{
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav{
-        flex-direction: column;
-        margin-top: 24px;
-        width: 100%;
-    } */
 
     #cover{
         margin-bottom: 32px;
@@ -622,4 +605,4 @@ footer p{
         flex-direction: column;
         gap: 24px;
     }
-}
+} */
