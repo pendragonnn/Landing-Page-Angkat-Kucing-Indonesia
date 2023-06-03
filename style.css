@@ -49,6 +49,7 @@ header > h1{
     padding: 8px;
     cursor: pointer;
     border-radius: 5px;
+    text-align: center;
 }
 
 .btn:hover {
@@ -157,78 +158,6 @@ nav >  a {
     cursor: pointer;
 }
 
-@media(max-width: 768px) {
-    nav {
-        justify-content: space-between;
-    }
-
-    nav > .nav-logo,
-    nav > .hamburger {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    nav > .nav-logo > .nav-logo-desc > a{
-        display: none;
-    }
-
-    nav > .nav-logo > .nav-logo-img > img{
-        width: 50px;
-    }
-    
-    nav > .nav-item {
-        display: none;
-    }
-
-    nav > .nav-logo {
-        margin: 0;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .clicked {
-        position: fixed;
-        background-color: #86C8BC;
-        width: 100%;
-        top: 65px;
-        right: 0;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        transition: 1s;
-        border-radius: 12px;
-        border: 1px solid black;
-        gap: 5px;
-    }
-
-    .clicked > a {
-        color: white;
-        padding: 2px;
-        border-radius: 5px;
-        font-size: 1rem;
-        margin-right: 1rem;
-    }
-
-    .clicked > p {
-        font-size: 1rem;
-    }
-
-    .clicked > a:hover{
-        color: black;
-        background-color: #CEEDC7;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-}
-
 #title-text{
     color: #CEEDC7;
     font-weight: 600;
@@ -275,6 +204,7 @@ nav >  a {
     padding: 0;
     width: 80%;
     object-fit: contain;
+    border-radius: 12px;
 }
 
 
@@ -373,7 +303,7 @@ nav >  a {
 .contact-detail{
     display: flex;
     justify-content: space-between;
-    margin-top: 72px;
+    margin-top: 32px;
     column-gap: 128px;
 }
 
@@ -398,12 +328,12 @@ nav >  a {
 form{
     display: flex;
     flex-direction: column;
-    border: 3px solid #86C8BC;
+    border: 3px solid #DDE6ED;
     padding: 64px 24px;
 }
 
 form h1{
-    font-size: 32px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -444,14 +374,14 @@ form button{
 .input-group label {
     font-weight: 700;
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .input-group input{
     border: none;
     outline: none;
     border-bottom: 1px solid black;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .input-group input:focus{
@@ -478,10 +408,88 @@ footer p{
 .social-item{
     display: flex;
     column-gap: 16px;
+    cursor: pointer;
 }
-
 /* footer end */
 
+/* media 768px */
+@media(max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav > .nav-logo,
+    nav > .hamburger {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    nav > .nav-logo > .nav-logo-desc > a{
+        display: none;
+    }
+
+    nav > .nav-logo > .nav-logo-img > img{
+        width: 50px;
+    }
+    
+    nav > .nav-item {
+        display: none;
+    }
+
+    nav > .nav-logo {
+        margin: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .clicked {
+        position: fixed;
+        background-color: #86C8BC;
+        width: 100%;
+        top: 65px;
+        right: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s;
+        border-radius: 12px;
+        border: 1px solid black;
+        gap: 5px;
+    }
+
+    .clicked > a {
+        color: white;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .clicked > p {
+        font-size: 1rem;
+    }
+
+    .clicked > a:hover{
+        color: black;
+        background-color: #CEEDC7;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 864px) {
+    .btn {
+        font-size: .7rem;
+    }
+}
 
 @media only screen and (max-width: 1280px){
     .service-detail{
@@ -498,7 +506,7 @@ footer p{
     }
 }
 
-/* @media only screen and (max-width: 1354px){
+@media only screen and (max-width: 1354px){
     html, body{
         margin: 0;
         padding: 0;
@@ -540,7 +548,6 @@ footer p{
 
     #about > div{
         margin-right: 0px;
-        margin-top: 32px;
         width: 100%;
     }
 
@@ -558,14 +565,19 @@ footer p{
         color: black;
     }
 
+    #cover {
+        width: 80%;
+    }
+
     .button-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 16px;
     }
 
-    .btn-alt{
-        margin-right: 0px;
+    .btn{
+        width: 50%;
     }
 
     .service-detail{
@@ -611,4 +623,4 @@ footer p{
         flex-direction: column;
         gap: 24px;
     }
-} */
+} 
