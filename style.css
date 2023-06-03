@@ -264,7 +264,6 @@ nav >  a {
 #about{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     column-gap: 16px;
 }
 
@@ -273,7 +272,8 @@ nav >  a {
 }
 
 #about > div > img{
-    width: 100%;
+    padding: 0;
+    width: 80%;
     object-fit: contain;
 }
 
