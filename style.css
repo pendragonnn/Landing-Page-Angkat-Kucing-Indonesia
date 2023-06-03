@@ -160,6 +160,10 @@ nav >  a {
     margin-left: 12px;
 }
 
+.menu {
+    display: none;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -194,7 +198,6 @@ nav >  a {
 
     .menu {
         display: none;
-
     }
 
     .clicked {
