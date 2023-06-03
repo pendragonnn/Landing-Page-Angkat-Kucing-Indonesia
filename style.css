@@ -109,18 +109,46 @@ header > h1{
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 100%;
     background-color: #86C8BC;
     padding: 5px;
-    border-radius: 12px;
     animation: bounceIn 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
 }
 
-nav > a {
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 1rem;
+}
+
+.nav-logo > .nav-logo-img {
+    width: 20%;
+}
+
+.nav-logo-desc {
+    font-weight: bold;
+}
+
+.nav-logo > .nav-logo-desc > a{
+    font-size: 1rem;
+    color: #000;
+}
+
+
+nav > .nav-item > a {
+    text-align: center;
     color: white;
-    margin: 5px;
+    font-weight: 600;
+    margin: 1rem;
+    font-size: .8rem;
     text-decoration: none;
 }
 
@@ -128,8 +156,86 @@ nav a:hover{
     color: #CEEDC7;
 }
 
-nav > a {
+nav >  a {
     margin-left: 12px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav > .nav-logo,
+    nav > .hamburger {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    nav > .nav-logo > .nav-logo-desc > a{
+        display: none;
+    }
+
+    nav > .nav-logo > .nav-logo-img > img{
+        width: 50px;
+    }
+    
+    nav > .nav-item {
+        display: none;
+    }
+
+    nav > .nav-logo {
+        margin: 0;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .clicked {
+        position: fixed;
+        background-color: #86C8BC;
+        width: 100%;
+        top: 65px;
+        right: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s;
+        border-radius: 12px;
+        border: 1px solid black;
+        gap: 5px;
+    }
+
+    .clicked > a {
+        color: white;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .clicked > p {
+        font-size: 1rem;
+    }
+
+    .clicked > a:hover{
+        color: black;
+        background-color: #CEEDC7;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 }
 
 #title-text{
@@ -394,6 +500,7 @@ footer p{
         margin: 0;
         padding: 0;
     }
+
     #header, #footer{
         padding: 16px 32px;
     }
@@ -402,7 +509,7 @@ footer p{
         padding: 64px 32px;
     }
 
-    header{
+    /* header{
         display: flex;
         flex-direction: column;
     }
@@ -411,10 +518,12 @@ footer p{
         flex-direction: column;
         margin-top: 24px;
         width: 100%;
-    }
+    } */
 
     #cover{
         margin-bottom: 32px;
+        width: 50%;
+        border-radius: 20px;
     }
 
     #landing{
