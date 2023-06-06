@@ -1,5 +1,8 @@
 :root {
-    --hijau-tua: #40513B;
+    --green-1: #40513B;
+    --green-2: #609966;
+    --green-3: #9DC08B;
+    --green-4: #EDF1D6;
 }
 
 *{
@@ -21,14 +24,15 @@ h1{
 
 a{
     text-decoration: none;
-    color: var(--hijau-tua);
+    color: var(--green-1);
     font-size: 1rem;
 }
 
 p{
     font-size: 1rem;
-    color: #979797;
+    color: var(--green-2);
     margin: 0 0 16px 0;
+    font-weight: 600;
 }
 
 section{
@@ -48,8 +52,9 @@ header > h1{
 }
 
 .btn {
-    background-color: #CEEDC7;
+    background-color: var(--green-3);
     color: white;
+    font-weight: 800;
     padding: 8px;
     cursor: pointer;
     border-radius: 5px;
@@ -126,19 +131,16 @@ nav {
     width: 20%;
 }
 
-.nav-logo-desc {
-    font-weight: bold;
-}
-
 .nav-logo > .nav-logo-desc > a{
     font-size: 1rem;
-    color: #000;
+    color: var(--green-1);
+    font-weight: 800;
 }
 
 
 nav > .nav-item > a {
     text-align: center;
-    color: white;
+    color: var(--green-1);
     font-weight: 600;
     margin: 1rem;
     font-size: .8rem;
@@ -163,8 +165,9 @@ nav >  a {
 }
 
 #title-text{
-    color: #CEEDC7;
-    font-weight: 600;
+    color: var(--green-1);
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
 #header h1{
@@ -224,7 +227,7 @@ nav >  a {
 #about-stats div div{
     width: 50px;
     height: 10px;
-    background-color: #86C8BC;
+    background-color: var(--green-2);
 }
 
 .about-stats-item{
@@ -245,7 +248,8 @@ nav >  a {
 }
 
 .hyperlink-service{
-    color: #86C8BC;
+    color: var(--green-3);
+    text-decoration: underline;
 }
 /* about-stats grid configuration end*/
 
@@ -292,6 +296,7 @@ nav >  a {
     height: 100%;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .service-detail-item:hover{
@@ -398,14 +403,15 @@ form button{
 footer{
     padding: 16px 128px;
     background-color: #CEEDC7;
-    color: white;
+    color: var(--green-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 footer p{
-    color: white;
+    color: var(--green-2);
+    font-weight: 600;
     width: 50%;
 }
 
